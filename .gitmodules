@@ -1,0 +1,4 @@
+[submodule "sw/PicoDVI"]
+	path = sw/PicoDVI
+	url = https://github.com/homelith/PicoDVI.git
+	branch = feat/x8scale
