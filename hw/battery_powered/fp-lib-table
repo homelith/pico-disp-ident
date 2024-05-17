@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "00_custom_lib")(type "KiCad")(uri "${KIPRJMOD}/../custom_lib/custom_lib.pretty")(options "")(descr ""))
+  (lib (name "02_temp_lib")(type "KiCad")(uri "${KIPRJMOD}/../../../kicad-mylib_itnl/temp_lib/temp_lib.pretty")(options "")(descr ""))
+  (lib (name "03_proven_lib")(type "KiCad")(uri "${KIPRJMOD}/../../../kicad-mylib_itnl/proven_lib/proven_lib.pretty")(options "")(descr ""))
+)
