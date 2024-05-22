@@ -66,7 +66,7 @@
   (fp_arc (start 0.8 1.35) (mid 0.65 1.2) (end 0.8 1.05) (layer "F.Fab") (width 0.1) (tstamp e7f0b7f2-d858-4ae9-ba3f-002204b945b4))
   (fp_arc (start 0.8 -1.05) (mid 0.65 -1.2) (end 0.8 -1.35) (layer "F.Fab") (width 0.1) (tstamp fc611fb7-3e4b-4d76-a049-0e8deb06752b))
   (fp_arc (start 0.8 0.55) (mid 0.65 0.4) (end 0.8 0.25) (layer "F.Fab") (width 0.1) (tstamp ff059c0d-9c6d-490a-a002-9d41b92d6baa))
-  (pad "1" smd rect (at -0.85 -1.2) (size 0.9 0.45) (layers "F.Cu" "B.Adhes" "F.Paste" "F.Mask") (tstamp e96597d5-2472-4579-99a1-c73c904a73f5))
+  (pad "1" smd rect (at -0.85 -1.2) (size 0.9 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e96597d5-2472-4579-99a1-c73c904a73f5))
   (pad "2" smd rect (at -0.85 -0.4) (size 0.9 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp c7e0f933-94a7-496f-80ff-d61c87d3ff14))
   (pad "3" smd rect (at -0.85 0.4) (size 0.9 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8e16ab4a-f8c9-4b7d-aeed-df43c0548cc9))
   (pad "4" smd rect (at -0.85 1.2) (size 0.9 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 5debcb3f-fdfe-48e0-a605-a46cce09c69c))
