@@ -455,7 +455,7 @@
   (pad "D3" smd rect (at 2.54 25.9 90) (size 0.8 1.6) (layers "F.Cu" "F.Mask") (tstamp 0504c604-5989-41d4-98b3-73baf39661a4))
   (pad "D3" smd roundrect (at 2.54 24.7 90) (size 3.2 1.6) (layers "F.Cu" "F.Mask") (roundrect_rratio 0.5) (tstamp 737d10d1-31d2-4ac3-8e9f-c01d3ad411b5))
   (pad "D3" thru_hole circle (at 2.54 23.9) (size 1.5 1.5) (drill 0.9) (layers *.Cu *.Mask) (tstamp 999b41ce-b175-4aa7-bc23-cb134ca59463))
-  (model "${KIPRJMOD}/../custom_lib/3dmodels/Raspberry_Pi_Pico.step"
+  (model "${KIPRJMOD}/../../../kicad-mylib_itnl/temp_lib/3dmodels/Raspberry_Pi_Pico.step"
     (offset (xyz -10.5 -25.5 0.5))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
