@@ -1,12 +1,14 @@
 (kicad_pcb (version 20211014) (generator pcbnew)
 
   (general
-    (thickness 1.6)
+    (thickness 3.0152)
   )
 
   (paper "A4")
   (layers
     (0 "F.Cu" signal)
+    (1 "In1.Cu" signal)
+    (2 "In2.Cu" signal)
     (31 "B.Cu" signal)
     (32 "B.Adhes" user "B.Adhesive")
     (33 "F.Adhes" user "F.Adhesive")
@@ -41,11 +43,15 @@
     (stackup
       (layer "F.SilkS" (type "Top Silk Screen"))
       (layer "F.Paste" (type "Top Solder Paste"))
-      (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
+      (layer "F.Mask" (type "Top Solder Mask") (color "Blue") (thickness 0.01))
       (layer "F.Cu" (type "copper") (thickness 0.035))
-      (layer "dielectric 1" (type "core") (thickness 1.51) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "dielectric 1" (type "prepreg") (thickness 0.2) (material "FR4") (epsilon_r 4.6) (loss_tangent 0.02))
+      (layer "In1.Cu" (type "copper") (thickness 0.0152))
+      (layer "dielectric 2" (type "core") (thickness 1) (material "FR4") (epsilon_r 4.6) (loss_tangent 0.02))
+      (layer "In2.Cu" (type "copper") (thickness 0.2))
+      (layer "dielectric 3" (type "prepreg") (thickness 1.51) (material "FR4") (epsilon_r 4.6) (loss_tangent 0.02))
       (layer "B.Cu" (type "copper") (thickness 0.035))
-      (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
+      (layer "B.Mask" (type "Bottom Solder Mask") (color "Blue") (thickness 0.01))
       (layer "B.Paste" (type "Bottom Solder Paste"))
       (layer "B.SilkS" (type "Bottom Silk Screen"))
       (copper_finish "None")
@@ -1668,7 +1674,7 @@
 
   (footprint "00_custom_lib:RT6150B-33GQW" (layer "F.Cu")
     (tedit 649EFE88) (tstamp 76bba238-8212-49c1-a55a-2946b814eb6e)
-    (at 141.72 71.45)
+    (at 61.7 89)
     (descr "back-boost converter, low quiescent current, 10-DFN")
     (tags "back boost converter 10-DFN")
     (property "Sheetfile" "battery_powered.kicad_sch")
@@ -3653,6 +3659,9 @@
   (gr_line (start 99.5 108.5) (end 106 108.5) (layer "Edge.Cuts") (width 0.1) (tstamp f98665b8-437c-4160-a69f-9de9cc397b2a))
   (gr_text "SN:" (at 83.7 46.5) (layer "B.SilkS") (tstamp 751a0d2c-cbc2-4ae7-9974-d9164220b7b8)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
+  )
+  (gr_text "Assumes jlcpcb 4-layer impedance control setup JLC7628.\nsurface copper : 0.035 mm\ninner copper : 0.0152 mm\nprepreg : 0.2mm Er:4.6\ncore : 0.7mm Er:4.6" (at 77.1 39.3) (layer "Cmts.User") (tstamp 46c7d09e-88e3-45ab-9db9-7e1a46d8128b)
+    (effects (font (size 1 1) (thickness 0.15)))
   )
 
   (segment (start 92.75 110.05) (end 93.5 109.3) (width 0.3) (layer "F.Cu") (net 19) (tstamp 59082296-1df6-4036-8828-8b938aa8e1a7))
